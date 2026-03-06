@@ -61,4 +61,23 @@ void setup()
     delay(250); // Wait for 250 millisecond(s)
   }
   digitalWrite(9, HIGH);
-
+digitalWrite(8, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(6, LOW);
+  delay(5000); // Wait for 5000 millisecond(s)
+  digitalWrite(9, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(7, LOW);
+  digitalWrite(6, LOW);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(9, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(7, HIGH);
+  digitalWrite(6, HIGH);
+  delay(5000); // Wait for 5000 millisecond(s)
+  for (counter2 = 0; counter2 < 6; ++counter2) {
+    digitalWrite(6, HIGH);
+    delay(250); // Wait for 250 millisecond(s)
+    digitalWrite(6, LOW);
+    delay(250); // Wait for 250 millisecond(s)
+  }
